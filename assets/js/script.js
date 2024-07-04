@@ -1,13 +1,13 @@
 /* offcanvas navigation bar */
 function openNav() {
-    document.getElementById("myNav").style.right = "0";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.right = "-250px";
-  }
-  /* offcanvas navigation bar */
-  
+  document.getElementById("myNav").style.right = "0";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.right = "-250px";
+}
+/* offcanvas navigation bar */
+
 /* home page ripple carousel */
 const carousel = document.querySelector(".r-carousel-div");
 const items = Array.from(document.querySelectorAll(".r-carousel-item"));
@@ -36,8 +36,7 @@ function updateSlides() {
     items[items.length - 1].style.transition = "none";
     items[items.length - 1].style.transform = "translateX(0)";
     setTimeout(() => {
-      items[items.length - 1].style.transition =
-        "transform 0.5s ease-in-out";
+      items[items.length - 1].style.transition = "transform 0.5s ease-in-out";
     }, 50);
   }, 500);
 }
@@ -73,3 +72,20 @@ document.addEventListener("DOMContentLoaded", () => {
   autoPlay();
 });
 /* home page ripple carousel */
+/*moving numbers */
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  let count = 0;
+  const max = parseInt(counter.getAttribute("data-max"), 10);
+
+  function increment() {
+    if (count < max) {
+      count++;
+      counter.textContent = count;
+      setTimeout(increment, 50);
+    }
+  }
+  increment();
+});
+/*moving numbers */
