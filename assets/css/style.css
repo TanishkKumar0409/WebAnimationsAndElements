@@ -68,3 +68,76 @@ body {
   width: 100%;
 }
 /* Off-Canvas Navigation Styles */
+/* Ripple Carousel CSS */
+.r-carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .r-carousel-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .r-carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .r-carousel-item:nth-child(1) {
+    background-image: url("../images/background/3416659.jpg");
+  }
+  
+  .r-carousel-item:nth-child(2) {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/565/496/non_2x/digital-marketing-abstract-technology-background-free-vector.jpg");
+  }
+  
+  .r-carousel-item:nth-child(3) {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/565/512/original/digital-marketing-abstract-technology-background-free-vector.jpg");
+  }
+  
+  .r-carousel-item:nth-child(4) {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/565/496/non_2x/digital-marketing-abstract-technology-background-free-vector.jpg");
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(29, 68, 31, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .nav-button:hover {
+    background: rgba(29, 68, 31, 0.8);
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+/* Ripple Carousel CSS */
