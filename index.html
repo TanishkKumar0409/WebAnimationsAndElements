@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-  crossorigin="anonymous"
-/>
-</head>
-<body>
-   <!-- Off-Canvas Navigation Bar -->
-   <section class="navigation">
-    <div class="logo-div">
-      <img src="assets/images/logo/png-logo.png" class="logo" alt="Logo" />
-    </div>
-    <div id="myNav" class="off-nav">
-      <div class="c-btn d-flex p-2">
-        <img src="assets/images/logo/png-logo.png" width="80%" alt="" />
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Off-Canvas Navigation Bar -->
+    <section class="navigation">
+      <div class="logo-div">
+        <img src="assets/images/logo/png-logo.png" class="logo" alt="Logo" />
       </div>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Results</a>
-      <a href="#">Blogs</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-      <a href="#">Careers with us</a>
-      <a href="#">Gallery</a>
-    </div>
-    <button class="openbtn p-2" onclick="openNav()">&#9776; Menu</button>
-  </section>
-  <!-- Off-Canvas Navigation Bar -->
+      <div id="myNav" class="off-nav">
+        <div class="c-btn d-flex p-2">
+          <img src="assets/images/logo/png-logo.png" width="80%" alt="" />
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+        </div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Results</a>
+        <a href="#">Blogs</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <a href="#">Careers with us</a>
+        <a href="#">Gallery</a>
+      </div>
+      <button class="openbtn p-2" onclick="openNav()">&#9776; Menu</button>
+    </section>
+    <!-- Off-Canvas Navigation Bar -->
     <!-- Ripple Carousel -->
-    <section>
+    <section class="rc-section">
       <div class="r-carousel">
         <div class="r-carousel-div">
           <div class="r-carousel-item ripple" style="z-index: 4">
@@ -68,13 +68,13 @@
       </div>
     </section>
     <!-- Ripple Carousel -->
-      <!-- Moving Numbers -->
-    <section class="moving-numbers mb-3 text-center">
+    <!-- Moving Numbers -->
+    <section class="moving-numbers mb-3 text-center container">
       <div class="glass">
         <div class="countbox d-flex justify-center items-center">
           <h2 class="fs-2">
             <h3 class="counter" data-max="50"></h3>
-            <b>+</b>
+            <i class="fa-solid fa-plus"></i>
           </h2>
         </div>
         <p>Clients</p>
@@ -83,7 +83,7 @@
         <div class="countbox d-flex justify-center items-center">
           <h2>
             <h3 class="counter" data-max="29"></h3>
-            <b>+</b>
+            <i class="fa-solid fa-plus"></i>
           </h2>
         </div>
         <p>Project</p>
@@ -93,7 +93,7 @@
         <div class="countbox d-flex justify-center items-center">
           <h2>
             <h3 class="counter" data-max="80"></h3>
-            <b>+</b>
+            <i class="fa-solid fa-plus"></i>
           </h2>
         </div>
         <p>Countries</p>
@@ -103,20 +103,20 @@
         <div class="countbox d-flex justify-center items-center">
           <h2>
             <h3 class="counter" data-max="60"></h3>
-            <b>+</b>
+            <i class="fa-solid fa-plus"></i>
           </h2>
         </div>
         <p>Satisfactions</p>
       </div>
     </section>
     <!-- Moving Numbers -->
-     <!-- About Section -->
+    <!-- About Section -->
     <section class="about-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 text-center p-lg-5">
+          <div class="col-lg-6 text-start p-lg-5">
             <h3>Who We Are?</h3>
-            <p class="text-start">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
               deleniti corporis minus tenetur itaque expedita consectetur
               repudiandae illo quae libero, voluptates aliquid rem, ut veritatis
@@ -130,6 +130,7 @@
               at rerum dignissimos modi vel error? Similique quam voluptas earum
               amet eum nulla dolore dignissimos eaque cupiditate.
             </p>
+            <br />
             <button class="btn btn-info">Learn more</button>
           </div>
           <div class="col-lg-6 text-start">
@@ -143,8 +144,13 @@
       </div>
     </section>
     <!-- About Section -->
-   <!-- scripts -->
+    <!-- scripts -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/ripples.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
