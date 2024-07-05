@@ -391,3 +391,12 @@ body {
   padding-top: 10%;
 }
 /* Service section */
+/* Parallax Image */
+.parallax {
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://i.pinimg.com/originals/8d/f7/e3/8df7e3619136f863cb5218d59546322e.gif)
+      no-repeat fixed center center;
+  background-size: cover;
+}
+/* Parallax Image */
