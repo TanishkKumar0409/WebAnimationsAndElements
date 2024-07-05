@@ -406,3 +406,26 @@ body {
   border-radius: 50%;
 }
 /* Testimonial */
+/* contact */
+.contact-form {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  background: #ffffffb9;
+  box-shadow: 0 0 3px gray;
+  border-radius: 5px;
+}
+input,textarea{
+  background: #ffffffa1 !important;
+}
+
+@media (max-width: 550px) {
+  .contact-form {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    position: relative;
+    margin-bottom: 15px;
+  }
+}
+/* contact */
