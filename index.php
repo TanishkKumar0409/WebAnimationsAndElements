@@ -619,6 +619,68 @@ include "header.php";
 </section>
 <iframe style="height: 500px; width: 100%; border: 0; margin: 0" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=offbeat+pixels&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
 <!-- Contact -->
+ <!-- footer -->
+<section class="footer container-fluid text-start">
+  <div class="row">
+    <div class="col-md-3 p-4">
+      <img src="assets/images/logo/png-logo.png" width="40%" alt="Company Logo" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus expedita nisi beatae consectetur mollitia doloribus
+        debitis dolorum illo asperiores atque.
+      </p>
+      <p><b>Head Office</b></p>
+      <p>
+        36INC, 3rd Floor City Center Mall, IGVP Pandri, Raipur, Chhattisgarh
+        492001
+      </p>
+      <p>
+        <strong>Kolkata</strong><br />112/2 Banamali Ghosal Lane, Behala
+        Kolkata 700034
+      </p>
+      <p>
+        <strong>Dehradun</strong><br />28 Banshiwala via Chakrata Road,
+        Dehradun 248007
+      </p>
+      <div class="icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="col-md-3 p-4">
+      <h3>Company</h3>
+      <a href="#">About us</a><br />
+      <a href="#">Service</a><br />
+      <a href="#">Blog</a><br />
+      <a href="#">Contact us</a>
+    </div>
+    <div class="col-md-3 p-4">
+      <h3>Services</h3>
+      <a href="#">Performance Marketing</a><br />
+      <a href="#">Branding and Strategy</a><br />
+      <a href="#">Social Media Marketing</a><br />
+      <a href="#">Search Engine Optimization</a><br />
+      <a href="#">Influencers Marketing</a><br />
+      <a href="#">Video Marketing</a><br />
+      <a href="#">Online Reputation Management</a><br />
+      <a href="#">Email Marketing</a>
+    </div>
+    <div class="col-md-3 p-4">
+      <h3>More Services</h3>
+      <a href="#">Lead Generation</a><br />
+      <a href="#">Web Development</a><br />
+      <a href="#">Mobile App Development</a><br />
+      <a href="#">Digital PR</a><br />
+      <a href="#">Photography</a><br />
+      <a href="#">Video Production</a><br />
+      <a href="#">ERP & CRM System</a><br />
+      <a href="#">Enrollment & Application</a>
+    </div>
+  </div>
+</section>
+<!-- footer -->
 <?php
 include "footer.php";
 ?>
