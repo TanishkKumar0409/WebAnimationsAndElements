@@ -301,8 +301,7 @@ body {
   -webkit-transform: skewY(-30deg) rotate(60deg);
   -ms-transform: skewY(-30deg) rotate(60deg);
   transform: skewY(-30deg) rotate(60deg);
-
-  -webkit-backface-visibility: hidden;
+  visibility: hidden;
 }
 
 /* HEX CONTENT */
@@ -395,7 +394,7 @@ body {
 .parallax {
   height: 200px;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(https://i.pinimg.com/originals/8d/f7/e3/8df7e3619136f863cb5218d59546322e.gif)
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-4ONJb4mvyw2lfhlGw8CeWWSJhHtkKvWFJw&s")
       no-repeat fixed center center;
   background-size: cover;
 }
