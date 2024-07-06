@@ -461,6 +461,44 @@ include "header.php";
   </div>
 </section>
 <!-- gallery -->
+ <!-- clients -->
+<section class="container-fluid clients bg-secondary-subtle py-3">
+  <div class="row">
+    <div class="col">
+      <div class="carousel-container">
+        <div class="carousel-content ">
+          <img src="assets/images/more-clients/1.png" alt="">
+          <img src="assets/images/more-clients/2.png" alt="">
+          <img src="assets/images/more-clients/3.png" alt="">
+          <img src="assets/images/more-clients/4.png" alt="">
+          <img src="assets/images/more-clients/5.png" alt="">
+          <img src="assets/images/more-clients/6.png" alt="">
+          <img src="assets/images/more-clients/7.png" alt="">
+          <img src="assets/images/more-clients/8.png" alt="">
+          <img src="assets/images/more-clients/9.png" alt="">
+          <img src="assets/images/more-clients/10.png" alt="">
+          <img src="assets/images/more-clients/11.png" alt="">
+          <img src="assets/images/more-clients/12.png" alt="">
+          <img src="assets/images/more-clients/13.png" alt="">
+          <img src="assets/images/more-clients/14.png" alt="">
+          <img src="assets/images/more-clients/15.png" alt="">
+          <img src="assets/images/more-clients/16.png" alt="">
+          <img src="assets/images/more-clients/17.png" alt="">
+          <img src="assets/images/more-clients/18.png" alt="">
+          <img src="assets/images/more-clients/19.png" alt="">
+          <img src="assets/images/more-clients/20.png" alt="">
+          <img src="assets/images/more-clients/21.png" alt="">
+          <img src="assets/images/more-clients/22.png" alt="">
+          <img src="assets/images/more-clients/23.png" alt="">
+          <img src="assets/images/more-clients/24.png" alt="">
+          <img src="assets/images/more-clients/25.png" alt="">
+          <img src="assets/images/more-clients/26.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- clients -->
 <!-- Parallax Image -->
 <section class="parallax"></section>
 <!-- Parallax Image -->
