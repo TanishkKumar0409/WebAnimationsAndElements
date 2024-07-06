@@ -255,7 +255,7 @@ include "header.php";
   <div class="container">
     <div class="row">
       <div class="col text-center px-md-5">
-        <h2>Gallery</h2>
+        <h2>Projects</h2>
         <p class="px-md-5 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
           ex libero ab, quas et. Rerum quasi tempore minima error possimus
@@ -417,6 +417,50 @@ include "header.php";
 <!-- Parallax Image -->
 <section class="parallax"></section>
 <!-- Parallax Image -->
+ <!-- gallery -->
+<section class="container gallery">
+  <div class="row">
+    <div class="col text-center px-md-5">
+      <h2>Gallery</h2>
+      <p class="px-md-5 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
+        ex libero ab, quas et. Rerum quasi tempore minima error possimus
+        nulla fugiat magni? Dolores voluptatibus magnam numquam excepturi
+        suscipit!
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12 fixed-height">
+      <img src="https://wallpapercave.com/wp/wp3950068.jpg" alt="Image 1">
+    </div>
+    <div class="col-md-8 col-sm-6 col-12 fixed-height">
+      <img src="https://wallpapercave.com/wp/wp3950094.jpg" alt="Image 2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-sm-6 col-12 fixed-height">
+      <img src="https://media.istockphoto.com/id/959020654/photo/digital-marketing-new-startup-project-millennials-business-team-hands-at-work-with-financial.jpg?s=612x612&w=0&k=20&c=wwkyGtXxNKuew7FkH3DeJ5DCdqeM6kAhzj1II6yxQJI=" alt="Image 3">
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 fixed-height">
+      <img src="https://wallpapercave.com/wp/wp3950076.jpg" alt="Image 4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12 fixed-height">
+      <img src="https://wallpapers.com/images/hd/digital-marketing-massive-word-cloud-6gwpuhrzmxbvwqo5.jpg" alt="Image 5">
+    </div>
+    <div class="col-md-8 col-sm-6 col-12 fixed-height">
+      <img src="https://wallpapers.com/images/hd/marketing-blue-word-cloud-bzzcq00bgx4ndu2k.jpg" alt="Image 6">
+    </div>
+  </div>
+  <div class="row">
+    <div class="content my-3  ">
+      <div class="button"><a href="#">Learn More</a></div>
+    </div>
+  </div>
+</section>
+<!-- gallery -->
 <!-- Parallax Image -->
 <section class="parallax"></section>
 <!-- Parallax Image -->
