@@ -250,6 +250,170 @@ include "header.php";
   </div>
 </section>
 <!-- Services Section -->
+ <!-- owl carousel -->
+<section class="pt-lg-100 pb-lg-100 pt-70 pb-70 overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center px-md-5">
+        <h2>Gallery</h2>
+        <p class="px-md-5 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
+          ex libero ab, quas et. Rerum quasi tempore minima error possimus
+          nulla fugiat magni? Dolores voluptatibus magnam numquam excepturi
+          suscipit!
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-12 mt-lg-70 mt-40 position-relative" data-aos="fade-left" data-aos-delay="500">
+        <div class="btn-wrap">
+          <button class="prev-btn btn btn-light">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="next-btn btn btn-light">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="partners-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div class="pl-20 pr-20">
+              <img src="https://www.freeiconspng.com/thumbs/logo-design/3d-link-logo-brand-design-png-image-12.png" alt="" class="mb-20" />
+              <p class="carousel-text font-weight-300">
+                Our partnership with the Digital Veda team on a digital
+                platform has resulted in goal attainment at just half the
+                cost of traditional methods. DV's ingenuity shines through
+                their creative designs, ROI-driven paid ads, and inventive
+                branding strategies, all of which have remarkably elevated
+                our brand's effectiveness. Their close collaboration and
+                consistent delivery of innovative ideas have been invaluable
+                in boosting our overall branding efforts.
+              </p>
+              <div class="d-flex align-items-center mt-30">
+                <div class="mr-10">
+                  <img class="case-studies-user" src="https://static.vecteezy.com/system/resources/previews/012/986/755/non_2x/abstract-circle-logo-icon-free-png.png" alt="" />
+                </div>
+                <div>
+                  <h4 class="carousel-title mb-1">Mr Manoj Madhavan Kutty</h4>
+                  <p class="carousel-subtitle font-weight-300 mb-0">
+                    Director (Admission & Outreach, International Affairs &
+                    Administration)
+                  </p>
+                  <p class="carousel-subtitle font-weight-300 mb-0">
+                    SRM University Delhi-NCR, Sonepat
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pl-20 pr-20">
+              <img src="https://images.vexels.com/content/224138/preview/abstract-wavy-violet-logo-2321b7.png" alt="" class="mb-20" />
+              <p class="carousel-text font-weight-300">
+                Our ongoing partnership with Digital Veda has been a
+                remarkable journey. Their collaborative approach, working
+                with us rather than for us, has made the experience
+                efficient and delightful. Their proficiency in digital lead
+                generation, SEO, and social media promises to significantly
+                enhance our university's success. Working with Digital Veda
+                is more than a transaction; it's a true partnership that
+                yields positive bottom-line results.
+              </p>
+              <div class="d-flex align-items-center mt-30">
+                <div class="mr-10">
+                  <img class="case-studies-user" src="https://static.vecteezy.com/system/resources/previews/012/986/755/non_2x/abstract-circle-logo-icon-free-png.png" alt="" />
+                </div>
+                <div>
+                  <h4 class="carousel-title mb-1">Prof. R.L. Raina</h4>
+                  <p class="carousel-subtitle font-weight-300 mb-0">
+                    Vice - Chancellor | President
+                  </p>
+                  <p class="carousel-subtitle font-weight-300 mb-0">
+                    Jaipur National University
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pl-20 pr-20">
+              <img src="https://www.freeiconspng.com/thumbs/logo-design/abstract-logo-rainbow-circle-design-png-1.png" alt="" class="mb-20" />
+              <p class="carousel-text font-weight-300">
+                We have been associated with Digital Veda for a few years.
+                Digital Veda has wonderful team which understands Digital
+                Marketing really well. I interact with some of the best
+                people who are not just passionate about their work but come
+                out with unique campaign ideas that work wonders. This is a
+                company that puts its clients first and really understand
+                the various challenges that the client faces.
+              </p>
+              <div class="d-flex align-items-center mt-30">
+                <div class="mr-10">
+                  <img class="case-studies-user" src="https://static.vecteezy.com/system/resources/previews/012/986/755/non_2x/abstract-circle-logo-icon-free-png.png" alt="" />
+                </div>
+                <div>
+                  <h4 class="carousel-title mb-1">Dr. Sandeep Arora</h4>
+                  <p class="carousel-subtitle font-weight-300 mb-0">Chancellor</p>
+                  <p class="carousel-subtitle font-weight-300 mb-0">Kalinga University</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $(document).ready(function ($) {
+  var owl = $(".partners-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: true,
+    stagePadding: 100,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 0,
+      },
+      600: {
+        items: 1,
+        stagePadding: 50,
+      },
+      1000: {
+        items: 2,
+        stagePadding: 100,
+      },
+    },
+  });
+
+  $(".next-btn").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
+  $(".prev-btn").click(function () {
+    owl.trigger("prev.owl.carousel");
+  });
+
+  owl.on("changed.owl.carousel", function (event) {
+    if ($(".owl-prev").hasClass("disabled")) {
+      $(".prev-btn").addClass("disabled");
+    } else {
+      $(".prev-btn").removeClass("disabled");
+    }
+    if ($(".owl-next").hasClass("disabled")) {
+      $(".next-btn").addClass("disabled");
+    } else {
+      $(".next-btn").removeClass("disabled");
+    }
+  });
+});
+</script>
+<!-- owl carousel -->
 <!-- Parallax Image -->
 <section class="parallax"></section>
 <!-- Parallax Image -->

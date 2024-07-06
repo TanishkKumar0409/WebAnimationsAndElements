@@ -89,3 +89,6 @@ counters.forEach((counter) => {
   increment();
 });
 /*moving numbers */
+/* owl carousel */
+
+/* owl carousel */
