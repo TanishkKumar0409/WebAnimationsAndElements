@@ -94,7 +94,9 @@ include "header.php";
           amet eum nulla dolore dignissimos eaque cupiditate.
         </p>
         <br />
-        <button class="btn btn-info">Learn more</button>
+        <div class="content my-3  ">
+          <div class="button"><a href="#">Learn More</a></div>
+        </div>
       </div>
       <div class="col-lg-6 text-start about-image">
         <img src="assets/images/background/about-image.webp" width="80%" alt="" />
@@ -245,12 +247,16 @@ include "header.php";
           </div>
         </li>
       </ul>
-      <a href="#" class="float-end me-5 text-dark text-decoration-none link-hover">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="content my-3">
+      <div class="button"><a href="#">Learn More</a></div>
     </div>
   </div>
 </section>
 <!-- Services Section -->
- <!-- owl carousel -->
+<!-- owl carousel -->
 <section class="pt-lg-100 pb-lg-100 pt-70 pb-70 overflow-hidden">
   <div class="container">
     <div class="row">
@@ -364,63 +370,63 @@ include "header.php";
   </div>
 </section>
 <script>
-  $(document).ready(function ($) {
-  var owl = $(".partners-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    dots: true,
-    stagePadding: 100,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn",
-    responsive: {
-      0: {
-        items: 1,
-        stagePadding: 0,
+  $(document).ready(function($) {
+    var owl = $(".partners-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      dots: true,
+      stagePadding: 100,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      animateOut: "fadeOut",
+      animateIn: "fadeIn",
+      responsive: {
+        0: {
+          items: 1,
+          stagePadding: 0,
+        },
+        600: {
+          items: 1,
+          stagePadding: 50,
+        },
+        1000: {
+          items: 2,
+          stagePadding: 100,
+        },
       },
-      600: {
-        items: 1,
-        stagePadding: 50,
-      },
-      1000: {
-        items: 2,
-        stagePadding: 100,
-      },
-    },
-  });
+    });
 
-  $(".next-btn").click(function () {
-    owl.trigger("next.owl.carousel");
-  });
-  $(".prev-btn").click(function () {
-    owl.trigger("prev.owl.carousel");
-  });
+    $(".next-btn").click(function() {
+      owl.trigger("next.owl.carousel");
+    });
+    $(".prev-btn").click(function() {
+      owl.trigger("prev.owl.carousel");
+    });
 
-  owl.on("changed.owl.carousel", function (event) {
-    if ($(".owl-prev").hasClass("disabled")) {
-      $(".prev-btn").addClass("disabled");
-    } else {
-      $(".prev-btn").removeClass("disabled");
-    }
-    if ($(".owl-next").hasClass("disabled")) {
-      $(".next-btn").addClass("disabled");
-    } else {
-      $(".next-btn").removeClass("disabled");
-    }
+    owl.on("changed.owl.carousel", function(event) {
+      if ($(".owl-prev").hasClass("disabled")) {
+        $(".prev-btn").addClass("disabled");
+      } else {
+        $(".prev-btn").removeClass("disabled");
+      }
+      if ($(".owl-next").hasClass("disabled")) {
+        $(".next-btn").addClass("disabled");
+      } else {
+        $(".next-btn").removeClass("disabled");
+      }
+    });
   });
-});
 </script>
 <!-- owl carousel -->
 <!-- Parallax Image -->
 <section class="parallax"></section>
 <!-- Parallax Image -->
- <!-- gallery -->
-<section class="container gallery">
+<!-- gallery -->
+<section class="container gallery p-5">
   <div class="row">
-    <div class="col text-center px-md-5">
+    <div class="col text-center px-md-5 py-5">
       <h2>Gallery</h2>
       <p class="px-md-5 text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
@@ -461,7 +467,7 @@ include "header.php";
   </div>
 </section>
 <!-- gallery -->
- <!-- clients -->
+<!-- clients -->
 <section class="container-fluid clients bg-secondary-subtle py-3">
   <div class="row">
     <div class="col">
@@ -473,26 +479,6 @@ include "header.php";
           <img src="assets/images/more-clients/4.png" alt="">
           <img src="assets/images/more-clients/5.png" alt="">
           <img src="assets/images/more-clients/6.png" alt="">
-          <img src="assets/images/more-clients/7.png" alt="">
-          <img src="assets/images/more-clients/8.png" alt="">
-          <img src="assets/images/more-clients/9.png" alt="">
-          <img src="assets/images/more-clients/10.png" alt="">
-          <img src="assets/images/more-clients/11.png" alt="">
-          <img src="assets/images/more-clients/12.png" alt="">
-          <img src="assets/images/more-clients/13.png" alt="">
-          <img src="assets/images/more-clients/14.png" alt="">
-          <img src="assets/images/more-clients/15.png" alt="">
-          <img src="assets/images/more-clients/16.png" alt="">
-          <img src="assets/images/more-clients/17.png" alt="">
-          <img src="assets/images/more-clients/18.png" alt="">
-          <img src="assets/images/more-clients/19.png" alt="">
-          <img src="assets/images/more-clients/20.png" alt="">
-          <img src="assets/images/more-clients/21.png" alt="">
-          <img src="assets/images/more-clients/22.png" alt="">
-          <img src="assets/images/more-clients/23.png" alt="">
-          <img src="assets/images/more-clients/24.png" alt="">
-          <img src="assets/images/more-clients/25.png" alt="">
-          <img src="assets/images/more-clients/26.png" alt="">
         </div>
       </div>
     </div>
@@ -612,14 +598,16 @@ include "header.php";
           <label for="floatingTextarea">Comments</label>
         </div>
         <br />
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="content my-3  ">
+          <div class="button"><a href="#">Learn More</a></div>
+        </div>
       </form>
     </div>
   </div>
 </section>
 <iframe style="height: 500px; width: 100%; border: 0; margin: 0" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=offbeat+pixels&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
 <!-- Contact -->
- <!-- footer -->
+<!-- footer -->
 <section class="footer container-fluid text-start">
   <div class="row">
     <div class="col-md-3 p-4">
