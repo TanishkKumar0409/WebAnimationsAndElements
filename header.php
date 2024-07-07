@@ -11,9 +11,7 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <script src="assets/js/jquery-3.7.1.min.js"></script>
-  <style>
-
-  </style>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
