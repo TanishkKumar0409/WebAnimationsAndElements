@@ -21,24 +21,44 @@
   <section class="content">
     <!-- Off-Canvas Navigation Bar -->
     <section class="navigation">
-      <div class="logo-div">
-        <img src="assets/images/logo/png-logo.png" class="logo" alt="Logo" />
-      </div>
-      <div id="myNav" class="off-nav">
-        <div class="c-btn d-flex p-2">
-          <img src="assets/images/logo/png-logo.png" width="80%" alt="" />
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="navbar">
+        <div class="logo">
+          <img src="../macs/assets/images/logo/png-logo.png" alt="Logo">
         </div>
-        <a href="index.php">Home</a>
-        <a href="about.php">About</a>
-        <a href="#">Services</a>
-        <a href="#">Results</a>
-        <a href="#">Blogs</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="#">Careers with us</a>
-        <a href="#">Gallery</a>
       </div>
-      <button class="openbtn p-2" onclick="openNav()">&#9776; Menu</button>
+      <div class="tog-button" id="toggleButton">
+          <span class="top_line common"></span>
+          <span class="middle_line common"></span>
+          <span class="bottom_line common"></span>
+      </div>
+      <div class="offcanvas-custom" id="offcanvasCustom">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasCustomLabel">
+            <img src="../macs/assets/images/logo/png-logo.png" width="100%" alt="Logo">
+          </h5>
+        </div>
+        <div class="offcanvas-body">
+          <ul>
+            <li><a href="index.php"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.php"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Results</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i> Blogs</a></li>
+            <li><a href="#"><i class="fas fa-user-tie"></i> Clients</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Careers with us</a></li>
+            <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas-footer">
+          <p><i class="fas fa-map-marker-alt"></i> Your Address Here</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Off-Canvas Navigation Bar -->

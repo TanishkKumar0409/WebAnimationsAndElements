@@ -6,13 +6,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // preloader
 /* offcanvas navigation bar */
-function openNav() {
-  document.getElementById("myNav").style.right = "0";
-}
+document.getElementById('toggleButton').addEventListener('click', function() {
+  this.classList.toggle('active');
+  var offcanvas = document.getElementById('offcanvasCustom');
+  if (this.classList.contains('active')) {
+    offcanvas.classList.add('show');
+  } else {
+    offcanvas.classList.remove('show');
+  }
+});
 
-function closeNav() {
-  document.getElementById("myNav").style.right = "-250px";
-}
+// Close the offcanvas if the user clicks outside of it
+document.addEventListener('click', function(event) {
+  var offcanvas = document.getElementById('offcanvasCustom');
+  var toggleButton = document.getElementById('toggleButton');
+  if (!offcanvas.contains(event.target) && !toggleButton.contains(event.target)) {
+    offcanvas.classList.remove('show');
+    toggleButton.classList.remove('active');
+  }
+});
 /* offcanvas navigation bar */
 
 /* home page ripple carousel */
