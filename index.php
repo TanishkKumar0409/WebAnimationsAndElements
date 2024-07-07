@@ -77,7 +77,7 @@ include "header.php";
 <section class="about-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 text-start p-lg-5">
+      <div class="about-text col-lg-6 text-start p-lg-5">
         <h3>Who We Are?</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
@@ -96,7 +96,7 @@ include "header.php";
         <br />
         <button class="btn btn-info">Learn more</button>
       </div>
-      <div class="col-lg-6 text-start">
+      <div class="col-lg-6 text-start about-image">
         <img src="https://static.vecteezy.com/system/resources/thumbnails/011/019/585/small_2x/social-media-and-digital-marketing-3d-illustration-png.png" width="80%" alt="" />
       </div>
     </div>
@@ -106,7 +106,7 @@ include "header.php";
 <!-- Services Section -->
 <section class="services container-fluid bg-secondary-subtle">
   <div class="row p-md-5 py-5">
-    <div class="col text-center px-md-5">
+    <div class="col text-center px-md-5 head">
       <h2>Services</h2>
       <p class="px-md-5 text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
@@ -254,7 +254,7 @@ include "header.php";
 <section class="pt-lg-100 pb-lg-100 pt-70 pb-70 overflow-hidden">
   <div class="container">
     <div class="row">
-      <div class="col text-center px-md-5">
+      <div class="col text-center px-md-5 head">
         <h2>Projects</h2>
         <p class="px-md-5 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
@@ -264,7 +264,7 @@ include "header.php";
         </p>
       </div>
     </div>
-    <div class="row align-items-center">
+    <div class="row align-items-center owl-box">
       <div class="col-md-12 mt-lg-70 mt-40 position-relative" data-aos="fade-left" data-aos-delay="500">
         <div class="btn-wrap">
           <button class="prev-btn btn btn-light">
@@ -275,7 +275,7 @@ include "header.php";
           </button>
         </div>
         <div class="partners-carousel owl-carousel owl-theme">
-          <div class="item">
+          <div class="item owl-detail">
             <div class="pl-20 pr-20">
               <img src="https://www.freeiconspng.com/thumbs/logo-design/3d-link-logo-brand-design-png-image-12.png" alt="" class="mb-20" />
               <p class="carousel-text font-weight-300">

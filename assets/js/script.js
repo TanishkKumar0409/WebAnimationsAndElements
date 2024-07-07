@@ -1,3 +1,10 @@
+// preloader
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.body.classList.add("loaded");
+  }, 2000);
+});
+// preloader
 /* offcanvas navigation bar */
 function openNav() {
   document.getElementById("myNav").style.right = "0";
@@ -89,6 +96,3 @@ counters.forEach((counter) => {
   increment();
 });
 /*moving numbers */
-/* owl carousel */
-
-/* owl carousel */
