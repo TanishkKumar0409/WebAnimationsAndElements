@@ -2,6 +2,9 @@
 *{
   scrollbar-width: none;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   background: #ffffff;
@@ -155,20 +158,21 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
+
 .r-carousel-item:nth-child(1) {
-  background-image: url("../images/background/3416659.jpg");
+  background-image: url("../images/background/rback1.jpg");
 }
 
 .r-carousel-item:nth-child(2) {
-  background-image: url("https://cdn.pixabay.com/photo/2020/12/09/03/10/digital-marketing-5816304_640.jpg");
+  background-image: url("../images/background/rback2.jpg");
 }
 
 .r-carousel-item:nth-child(3) {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/003/565/512/original/digital-marketing-abstract-technology-background-free-vector.jpg");
+  background-image: url("../images/background/rback3.jpg");
 }
 
 .r-carousel-item:nth-child(4) {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/003/565/496/non_2x/digital-marketing-abstract-technology-background-free-vector.jpg");
+  background-image: url("../images/background/rback4.jpg");
 }
 
 .nav-button {
@@ -552,7 +556,7 @@ body {
 .parallax {
   height: 200px;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(https://e0.pxfuel.com/wallpapers/35/308/desktop-wallpaper-don-t-let-digital-marketing-mistakes-derail-your-business-internet-marketing.jpg)
+    url(../images/background/parallax.jpg)
       no-repeat fixed center center;
   background-size: cover;
 }

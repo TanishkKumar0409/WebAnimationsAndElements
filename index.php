@@ -97,7 +97,7 @@ include "header.php";
         <button class="btn btn-info">Learn more</button>
       </div>
       <div class="col-lg-6 text-start about-image">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/011/019/585/small_2x/social-media-and-digital-marketing-3d-illustration-png.png" width="80%" alt="" />
+        <img src="assets/images/background/about-image.webp" width="80%" alt="" />
       </div>
     </div>
   </div>
@@ -121,7 +121,7 @@ include "header.php";
       <ul id="categories" class="clr">
         <li>
           <div>
-            <img src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg" alt="" />
+            <img src="assets/images/services/performance.webp" alt="" />
             <div class="heading">
               <h1>Performance Marketing</h1>
             </div>
@@ -135,7 +135,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" />
+            <img src="assets/images/services/branding.avif" alt="" />
             <div class="heading">
               <h1>Brading and Strategy</h1>
             </div>
@@ -149,7 +149,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
+            <img src="assets/images/services/smm.jpg" alt="" />
             <div class="heading">
               <h1>Social Media Marketing</h1>
             </div>
@@ -163,7 +163,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
+            <img src="assets/images/services/seo.webp" alt="" />
             <div class="heading">
               <h1>Search Engine Optimization</h1>
             </div>
@@ -177,7 +177,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="" />
+            <img src="assets/images/services/influence.webp" alt="" />
             <div class="heading">
               <h1>Influencer Marketing</h1>
             </div>
@@ -191,7 +191,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
+            <img src="assets/images/services/video.jpg" alt="" />
             <div class="heading">
               <h1>Video Marketing</h1>
             </div>
@@ -205,7 +205,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm7.staticflickr.com/6092/6227418584_d5883b0948.jpg" alt="" />
+            <img src="assets/images/services/reputation.webp" alt="" />
             <div class="heading">
               <h1>Online Reputation Management</h1>
             </div>
@@ -219,7 +219,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg" alt="" />
+            <img src="assets/images/services/email.jpg" alt="" />
             <div class="heading">
               <h1>Email Marketing</h1>
             </div>
@@ -233,7 +233,7 @@ include "header.php";
 
         <li>
           <div>
-            <img src="https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg" alt="" />
+            <img src="assets/images/services/content.jpg" alt="" />
             <div class="heading">
               <h1>Content Marketing</h1>
             </div>
@@ -277,7 +277,7 @@ include "header.php";
         <div class="partners-carousel owl-carousel owl-theme">
           <div class="item owl-detail">
             <div class="pl-20 pr-20">
-              <img src="https://www.freeiconspng.com/thumbs/logo-design/3d-link-logo-brand-design-png-image-12.png" alt="" class="mb-20" />
+              <img src="assets/images/projects/p1.png" alt="" class="mb-20" />
               <p class="carousel-text font-weight-300">
                 Our partnership with the Digital Veda team on a digital
                 platform has resulted in goal attainment at just half the
@@ -290,7 +290,7 @@ include "header.php";
               </p>
               <div class="d-flex align-items-center mt-30">
                 <div class="mr-10">
-                  <img class="case-studies-user" src="https://static.vecteezy.com/system/resources/previews/012/986/755/non_2x/abstract-circle-logo-icon-free-png.png" alt="" />
+                  <img class="case-studies-user" src="assets/images/projects/icon.webp" alt="" />
                 </div>
                 <div>
                   <h4 class="carousel-title mb-1">Mr Manoj Madhavan Kutty</h4>
@@ -307,7 +307,7 @@ include "header.php";
           </div>
           <div class="item">
             <div class="pl-20 pr-20">
-              <img src="https://images.vexels.com/content/224138/preview/abstract-wavy-violet-logo-2321b7.png" alt="" class="mb-20" />
+              <img src="assets/images/projects/p2.webp" alt="" class="mb-20" />
               <p class="carousel-text font-weight-300">
                 Our ongoing partnership with Digital Veda has been a
                 remarkable journey. Their collaborative approach, working
@@ -320,7 +320,7 @@ include "header.php";
               </p>
               <div class="d-flex align-items-center mt-30">
                 <div class="mr-10">
-                  <img class="case-studies-user" src="https://static.vecteezy.com/system/resources/previews/012/986/755/non_2x/abstract-circle-logo-icon-free-png.png" alt="" />
+                  <img class="case-studies-user" src="assets/images/projects/icon.webp" alt="" />
                 </div>
                 <div>
                   <h4 class="carousel-title mb-1">Prof. R.L. Raina</h4>
@@ -336,7 +336,7 @@ include "header.php";
           </div>
           <div class="item">
             <div class="pl-20 pr-20">
-              <img src="https://www.freeiconspng.com/thumbs/logo-design/abstract-logo-rainbow-circle-design-png-1.png" alt="" class="mb-20" />
+              <img src="assets/images/projects/p3.png" alt="" class="mb-20" />
               <p class="carousel-text font-weight-300">
                 We have been associated with Digital Veda for a few years.
                 Digital Veda has wonderful team which understands Digital
@@ -348,7 +348,7 @@ include "header.php";
               </p>
               <div class="d-flex align-items-center mt-30">
                 <div class="mr-10">
-                  <img class="case-studies-user" src="https://static.vecteezy.com/system/resources/previews/012/986/755/non_2x/abstract-circle-logo-icon-free-png.png" alt="" />
+                  <img class="case-studies-user" src="assets/images/projects/icon.webp" alt="" />
                 </div>
                 <div>
                   <h4 class="carousel-title mb-1">Dr. Sandeep Arora</h4>
@@ -432,26 +432,26 @@ include "header.php";
   </div>
   <div class="row">
     <div class="col-md-4 col-sm-6 col-12 fixed-height">
-      <img src="https://wallpapercave.com/wp/wp3950068.jpg" alt="Image 1">
+      <img src="assets/images/gallery/g1.jpg" alt="Image 1">
     </div>
     <div class="col-md-8 col-sm-6 col-12 fixed-height">
-      <img src="https://wallpapercave.com/wp/wp3950094.jpg" alt="Image 2">
+      <img src="assets/images/gallery/g2.jpg" alt="Image 2">
     </div>
   </div>
   <div class="row">
     <div class="col-md-8 col-sm-6 col-12 fixed-height">
-      <img src="https://media.istockphoto.com/id/959020654/photo/digital-marketing-new-startup-project-millennials-business-team-hands-at-work-with-financial.jpg?s=612x612&w=0&k=20&c=wwkyGtXxNKuew7FkH3DeJ5DCdqeM6kAhzj1II6yxQJI=" alt="Image 3">
+      <img src="assets/images/gallery/g3.webp" alt="Image 3">
     </div>
     <div class="col-md-4 col-sm-6 col-12 fixed-height">
-      <img src="https://wallpapercave.com/wp/wp3950076.jpg" alt="Image 4">
+      <img src="assets/images/gallery/g4.jpg" alt="Image 4">
     </div>
   </div>
   <div class="row">
     <div class="col-md-4 col-sm-6 col-12 fixed-height">
-      <img src="https://wallpapers.com/images/hd/digital-marketing-massive-word-cloud-6gwpuhrzmxbvwqo5.jpg" alt="Image 5">
+      <img src="assets/images/gallery/g5.webp" alt="Image 5">
     </div>
     <div class="col-md-8 col-sm-6 col-12 fixed-height">
-      <img src="https://wallpapers.com/images/hd/marketing-blue-word-cloud-bzzcq00bgx4ndu2k.jpg" alt="Image 6">
+      <img src="assets/images/gallery/g6.webp" alt="Image 6">
     </div>
   </div>
   <div class="row">
@@ -521,7 +521,7 @@ include "header.php";
     <div class="carousel-inner">
       <div class="carousel-item active px-md-5">
         <div class="img d-flex justify-content-center">
-          <img src="https://static.vecteezy.com/system/resources/thumbnails/006/487/917/small_2x/man-avatar-icon-free-vector.jpg" class="d-block test-image" alt="..." />
+          <img src="assets/images/testimonials/test-1.jpg" class="d-block test-image" alt="..." />
         </div>
         <div class="img-text">
           <p>
@@ -538,7 +538,7 @@ include "header.php";
       </div>
       <div class="carousel-item px-md-5">
         <div class="img d-flex justify-content-center">
-          <img src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg" class="d-block test-image" alt="..." />
+          <img src="assets/images/testimonials/test-2.jpg" class="d-block test-image" alt="..." />
         </div>
         <div class="img-text">
           <p>
@@ -555,7 +555,7 @@ include "header.php";
       </div>
       <div class="carousel-item px-md-5">
         <div class="img d-flex justify-content-center">
-          <img src="https://static.vecteezy.com/system/resources/thumbnails/006/487/917/small_2x/man-avatar-icon-free-vector.jpg" class="d-block test-image" alt="..." />
+          <img src="assets/images/testimonials/test-1.jpg" class="d-block test-image" alt="..." />
         </div>
         <div class="img-text">
           <p>
