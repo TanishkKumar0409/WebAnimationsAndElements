@@ -257,7 +257,7 @@ include "header.php";
 </section>
 <!-- Services Section -->
 <!-- owl carousel -->
-<section class="pt-lg-100 pb-lg-100 pt-70 pb-70 overflow-hidden">
+<!-- <section class="pt-lg-100 pb-lg-100 pt-70 pb-70 overflow-hidden">
   <div class="container">
     <div class="row">
       <div class="col text-center px-md-5 head">
@@ -418,15 +418,15 @@ include "header.php";
       }
     });
   });
-</script>
+</script> -->
 <!-- owl carousel -->
 <!-- Parallax Image -->
 <section class="parallax"></section>
 <!-- Parallax Image -->
 <!-- gallery -->
-<section class="container gallery p-5">
+<section class="container gallery">
   <div class="row">
-    <div class="col text-center px-md-5 py-5">
+    <div class="col text-center px-md-5 head">
       <h2>Gallery</h2>
       <p class="px-md-5 text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus
@@ -438,26 +438,26 @@ include "header.php";
   </div>
   <div class="row">
     <div class="col-md-4 col-sm-6 col-12 fixed-height">
-      <img src="assets/images/gallery/g1.jpg" alt="Image 1">
+      <img class="first-image" src="assets/images/gallery/g1.jpg" alt="Image 1">
     </div>
     <div class="col-md-8 col-sm-6 col-12 fixed-height">
-      <img src="assets/images/gallery/g2.jpg" alt="Image 2">
+      <img class="second-image" src="assets/images/gallery/g2.jpg" alt="Image 2">
     </div>
   </div>
   <div class="row">
     <div class="col-md-8 col-sm-6 col-12 fixed-height">
-      <img src="assets/images/gallery/g3.webp" alt="Image 3">
+      <img class="first-image" src="assets/images/gallery/g3.webp" alt="Image 3">
     </div>
     <div class="col-md-4 col-sm-6 col-12 fixed-height">
-      <img src="assets/images/gallery/g4.jpg" alt="Image 4">
+      <img class="second-image" src="assets/images/gallery/g4.jpg" alt="Image 4">
     </div>
   </div>
   <div class="row">
     <div class="col-md-4 col-sm-6 col-12 fixed-height">
-      <img src="assets/images/gallery/g5.webp" alt="Image 5">
+      <img class="first-image" src="assets/images/gallery/g5.webp" alt="Image 5">
     </div>
     <div class="col-md-8 col-sm-6 col-12 fixed-height">
-      <img src="assets/images/gallery/g6.webp" alt="Image 6">
+      <img class="second-image" src="assets/images/gallery/g6.webp" alt="Image 6">
     </div>
   </div>
   <div class="row">
@@ -469,21 +469,21 @@ include "header.php";
 <!-- gallery -->
 <!-- clients -->
 <section class="container-fluid clients bg-secondary-subtle py-3">
-  <div class="row">
-    <div class="col">
-      <div class="carousel-container">
-        <div class="carousel-content ">
-          <img src="assets/images/more-clients/1.png" alt="">
-          <img src="assets/images/more-clients/2.png" alt="">
-          <img src="assets/images/more-clients/3.png" alt="">
-          <img src="assets/images/more-clients/4.png" alt="">
-          <img src="assets/images/more-clients/5.png" alt="">
-          <img src="assets/images/more-clients/6.png" alt="">
+    <div class="row">
+      <div class="col">
+        <div class="carousel-container">
+          <div class="carousel-content" id="carousel-content">
+            <img src="../MACS_CONCEPTS/assets/images/more-clients/1.png" alt="">
+            <img src="../MACS_CONCEPTS/assets/images/more-clients/2.png" alt="">
+            <img src="../MACS_CONCEPTS/assets/images/more-clients/3.png" alt="">
+            <img src="../MACS_CONCEPTS/assets/images/more-clients/4.png" alt="">
+            <img src="../MACS_CONCEPTS/assets/images/more-clients/5.png" alt="">
+            <img src="../MACS_CONCEPTS/assets/images/more-clients/6.png" alt="">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 <!-- clients -->
 <!-- Parallax Image -->
 <section class="parallax"></section>
@@ -492,7 +492,7 @@ include "header.php";
 <section class="testimonial bg-secondary-subtle container-fluid text-center p-md-5">
   <div class="row p-md-5 py-5">
     <div class="col">
-      <div class="testimonial-head">
+      <div class="testimonial-head head">
         <h2>Testimonial</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
@@ -503,9 +503,9 @@ include "header.php";
       </div>
     </div>
   </div>
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleAutoplaying" class="carousel slide test-carousel" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active px-md-5">
+      <div class="carousel-item active px-md-5 ">
         <div class="img d-flex justify-content-center">
           <img src="assets/images/testimonials/test-1.jpg" class="d-block test-image" alt="..." />
         </div>
@@ -567,22 +567,25 @@ include "header.php";
 </section>
 <!-- Testimonial -->
 <!-- Contact -->
-<section class="contact container-fluid p-md-5">
-  <div class="row p-md-5 py-5 text-center">
-    <div class="col">
-      <div class="Contact-head">
-        <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-          assumenda culpa tempora saepe perspiciatis consequatur labore
-          inventore quam in dolorem eius enim molestias tenetur, quia sed
-          facere excepturi. Sit, placeat.
-        </p>
+<section class="contact">
+  <div class="contact-section container-fluid p-md-5">
+    <div class="row text-center">
+      <div class="col">
+        <div class="contact-head head">
+          <h2>Contact</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+            assumenda culpa tempora saepe perspiciatis consequatur labore
+            inventore quam in dolorem eius enim molestias tenetur, quia sed
+            facere excepturi. Sit, placeat.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row justify-content-center contact-form">
-    <div class="col p-3">
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=offbeat+pixels&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+    <div class="contact-form">
       <form>
         <div class="mb-3">
           <input type="text" class="form-control" placeholder="Name" />
@@ -593,19 +596,17 @@ include "header.php";
         <div class="mb-3">
           <input type="number" class="form-control" placeholder="Contact" />
         </div>
-        <div class="form-floating">
+        <div class="form-floating mb-3">
           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
           <label for="floatingTextarea">Comments</label>
         </div>
-        <br />
-        <div class="content my-3  ">
-          <div class="button"><a href="#">Learn More</a></div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Learn More</button>
         </div>
       </form>
     </div>
   </div>
 </section>
-<iframe style="height: 500px; width: 100%; border: 0; margin: 0" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=offbeat+pixels&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
 <!-- Contact -->
 <!-- footer -->
 <section class="footer container-fluid text-start">
@@ -637,14 +638,14 @@ include "header.php";
         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
       </div>
     </div>
-    <div class="col-md-3 p-4">
+    <div class="col-md-3 p-4 footer-links">
       <h3>Company</h3>
       <a href="#">About us</a><br />
       <a href="#">Service</a><br />
       <a href="#">Blog</a><br />
       <a href="#">Contact us</a>
     </div>
-    <div class="col-md-3 p-4">
+    <div class="col-md-3 p-4 footer-links">
       <h3>Services</h3>
       <a href="#">Performance Marketing</a><br />
       <a href="#">Branding and Strategy</a><br />
@@ -655,7 +656,7 @@ include "header.php";
       <a href="#">Online Reputation Management</a><br />
       <a href="#">Email Marketing</a>
     </div>
-    <div class="col-md-3 p-4">
+    <div class="col-md-3 p-4 footer-links">
       <h3>More Services</h3>
       <a href="#">Lead Generation</a><br />
       <a href="#">Web Development</a><br />

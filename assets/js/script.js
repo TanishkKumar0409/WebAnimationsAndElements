@@ -6,23 +6,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // preloader
 /* offcanvas navigation bar */
-document.getElementById('toggleButton').addEventListener('click', function() {
-  this.classList.toggle('active');
-  var offcanvas = document.getElementById('offcanvasCustom');
-  if (this.classList.contains('active')) {
-    offcanvas.classList.add('show');
+document.getElementById("toggleButton").addEventListener("click", function () {
+  this.classList.toggle("active");
+  var offcanvas = document.getElementById("offcanvasCustom");
+  if (this.classList.contains("active")) {
+    offcanvas.classList.add("show");
   } else {
-    offcanvas.classList.remove('show');
+    offcanvas.classList.remove("show");
   }
 });
 
 // Close the offcanvas if the user clicks outside of it
-document.addEventListener('click', function(event) {
-  var offcanvas = document.getElementById('offcanvasCustom');
-  var toggleButton = document.getElementById('toggleButton');
-  if (!offcanvas.contains(event.target) && !toggleButton.contains(event.target)) {
-    offcanvas.classList.remove('show');
-    toggleButton.classList.remove('active');
+document.addEventListener("click", function (event) {
+  var offcanvas = document.getElementById("offcanvasCustom");
+  var toggleButton = document.getElementById("toggleButton");
+  if (
+    !offcanvas.contains(event.target) &&
+    !toggleButton.contains(event.target)
+  ) {
+    offcanvas.classList.remove("show");
+    toggleButton.classList.remove("active");
   }
 });
 /* offcanvas navigation bar */
@@ -108,3 +111,15 @@ counters.forEach((counter) => {
   increment();
 });
 /*moving numbers */
+// clients
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselContent = document.getElementById("carousel-content");
+  const images = Array.from(carouselContent.children);
+
+  // Duplicate the images for a seamless loop
+  images.forEach((image) => {
+    const clone = image.cloneNode(true);
+    carouselContent.appendChild(clone);
+  });
+});
+// clients
