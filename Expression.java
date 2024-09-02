@@ -39,6 +39,9 @@ public class Expression {
         }
 
         Value.close();
-
+        
+        //! Fourth Expression
+        int b=7*49/7+35/7;
+        System.out.println("The value of b:"+b);
     }
 }
