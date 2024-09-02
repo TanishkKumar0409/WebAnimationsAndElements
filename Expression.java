@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import java.util.Random;
+
 public class Expression {
     public static void main(String[] args) {
         int y = 7;
@@ -8,9 +11,27 @@ public class Expression {
         System.out.println("the value of a:" + a);
 
         char Grade = 'A';
-        Grade+=8;
+        Grade += 8;
         System.out.println("The encrypted Grade:" + Grade);
-        Grade-=8;
-        System.out.println("The Decrypted Grade:"+Grade);
+        Grade -= 8;
+        System.out.println("The Decrypted Grade:" + Grade);
+
+        Scanner Value=new Scanner(System.in);
+        Random rand=new Random();
+        System.out.print("Please Enter a Number:");
+        int Entered=Value.nextInt();
+        int Genrated=rand.nextInt(1000);
+        System.out.println("The Given Number:"+Genrated);
+        System.out.println("The Entered Number:"+Entered);
+        if(Entered>Genrated){
+            System.out.println("Entered Number is Greater");
+        }else if(Entered==Genrated){
+            System.out.println("Both Numbers are Equal");
+        }else if(Entered<Genrated){
+            System.out.println("Genrated Number is Greater");
+        }
+        Value.close();
+
+
     }
 }
