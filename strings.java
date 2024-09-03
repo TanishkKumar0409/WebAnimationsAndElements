@@ -11,6 +11,12 @@ public class strings {
         String LowerCase = text1.toLowerCase();
         System.out.println("Lower Case:" + LowerCase);
 
+        // ? Replace Spaces with Underscores
+        System.out.print("Please Enter a String to Replace Spaces with Underscore:");
+        String text2 = Value.nextLine();
+        String Replaced = text2.replace(" ", "_");
+        System.out.println("Replaced Text:" + Replaced);
+
         Value.close();
     }
 }
