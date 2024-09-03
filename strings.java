@@ -17,11 +17,18 @@ public class strings {
         String Replaced = text2.replace(" ", "_");
         System.out.println("Replaced Text:" + Replaced);
 
-        
         // * */ Escaped Sequences
         System.out.print("Please Enter Your Name:");
         String Name = Value.nextLine();
         System.out.println("\"Dear " + Name + ", Thanks a log \"");
+
+        // ! Double and Triple Spaces Detector
+        System.out.println("Please enter a text with Double and Triple Spaces:");
+        String text3 = Value.nextLine();
+        int DoubleSpace = text3.indexOf("  ");
+        int TripleSpace = text3.indexOf("   ");
+        System.out.println("There are Double Space at index " + DoubleSpace);
+        System.out.println("There are Triple Space at index " + TripleSpace);
 
         Value.close();
     }
