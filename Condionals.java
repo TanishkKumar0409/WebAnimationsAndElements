@@ -72,6 +72,15 @@ public class Condionals {
                 break;
         }
 
+        // ? Fifth Set
+        System.out.print("Please Enter a Year:");
+        int Year = Value.nextInt();
+        if (Year % 4 == 0) {
+            System.out.println("This is a Leap Year");
+        } else if (Year % 4 == 1) {
+            System.out.println("This is not a Leap Year");
+        }
+
         Value.close();
     }
 }
