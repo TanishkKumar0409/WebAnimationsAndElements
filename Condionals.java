@@ -81,6 +81,17 @@ public class Condionals {
             System.out.println("This is not a Leap Year");
         }
 
+        // * Sixth Set */
+        System.out.print("Please Enter The Url");
+        String URL = Value.nextLine();
+        if (URL.endsWith(".com")) {
+            System.out.println("This is Commercial Website");
+        } else if (URL.endsWith(".org")) {
+            System.out.println("This is Organizational Website");
+        } else if (URL.endsWith(".in")) {
+            System.out.println("This is Indian Website");
+        }
+
         Value.close();
     }
 }
