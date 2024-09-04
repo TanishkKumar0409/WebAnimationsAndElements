@@ -29,6 +29,22 @@ public class Condionals {
             System.out.println("Your are Fail");
         }
 
+        // * Third Set */
+        System.out.print("Please Enter your Annual Salary:");
+        int Salary = Value.nextInt();
+        if (Salary >= 250000 && Salary < 500000) {
+            float Tax = (Salary / 100f) * 5;
+            System.out.println("You Have to Pay 5% Tax and Your income 5% is " + Tax);
+        } else if (Salary >= 500000 && Salary < 1000000) {
+            float Tax = (Salary / 100f) * 20;
+            System.out.println("You Have to Pay 20% Tax and Your income 20% is " + Tax);
+        } else if (Salary >= 100000) {
+            float Tax = (Salary / 100f) * 30;
+            System.out.println("You Have to Pay 30% Tax and Your income 30% is " + Tax);
+        } else if (Salary < 250000) {
+            System.out.println("You Don't Have to Pay Tax");
+        }
+
         Value.close();
     }
 }
