@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class loops {
     public static void main(String[] args) {
         Scanner Value = new Scanner(System.in);
+
         // ? First Task
         System.out.print("Please Enter a Number of * To Print in First Row:");
         int Row = Value.nextInt();
@@ -43,7 +44,7 @@ public class loops {
             i--;
         } while (i >= 1);
 
-        // ! Sixth Task
+        // ! Fifth Task
         System.out.print("Enter a Number To find Factorial:");
         int FactorialNumber = Value.nextInt();
         int Factorial = 1;
@@ -51,6 +52,15 @@ public class loops {
             Factorial = Factorial * i;
         }
         System.out.println(Factorial);
+
+        // ? Sixth Task
+        System.out.print("Enter a Number To Find Sum of Number Of Table:");
+        int TableValue = Value.nextInt();
+        int Sum = 0;
+        for (i = 1; i <= 10; i++) {
+            Sum += TableValue * i;
+        }
+        System.out.println(Sum);
 
         Value.close();
     }
