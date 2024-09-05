@@ -24,6 +24,15 @@ public class loops {
             }
         }
         System.out.println(x);
+
+        // * */ Third Task
+        System.out.print("Enter a Number To Print Table:");
+        int Table = Value.nextInt();
+        int i = 1;
+        do {
+            System.out.println(Table + " * " + i + " = " + Table * i);
+            i++;
+        } while (i <= 10);
         Value.close();
     }
 }
