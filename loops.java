@@ -12,6 +12,18 @@ public class loops {
             }
             System.out.println("");
         }
+
+        // ! Second Task
+        System.out.print("Enter the Number to sum:");
+        int Number = Value.nextInt();
+        int x = 0;
+        while (Number >= 0) {
+            if (Number % 2 == 0) {
+                x = x + Number;
+                Number -= 2;
+            }
+        }
+        System.out.println(x);
         Value.close();
     }
 }
