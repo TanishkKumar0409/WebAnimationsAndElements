@@ -33,6 +33,15 @@ public class loops {
             System.out.println(Table + " * " + i + " = " + Table * i);
             i++;
         } while (i <= 10);
+
+        // ? Fourth Task
+        i--;
+        System.out.print("Enter a Number To Print Table:");
+        int TableRevers = Value.nextInt();
+        do {
+            System.out.println(TableRevers + " * " + i + " = " + TableRevers * i);
+            i--;
+        } while (i >= 1);
         Value.close();
     }
 }
