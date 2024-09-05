@@ -42,6 +42,16 @@ public class loops {
             System.out.println(TableRevers + " * " + i + " = " + TableRevers * i);
             i--;
         } while (i >= 1);
+
+        // ! Sixth Task
+        System.out.print("Enter a Number To find Factorial:");
+        int FactorialNumber = Value.nextInt();
+        int Factorial = 1;
+        for (i = 1; i <= FactorialNumber; i++) {
+            Factorial = Factorial * i;
+        }
+        System.out.println(Factorial);
+
         Value.close();
     }
 }
