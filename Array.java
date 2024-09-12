@@ -9,12 +9,12 @@ public class Array {
         float[] Numbers = new float[5];
         float Sum = 0F;
         for (int i = 0; i <= Numbers.length - 1; i++) {
-        System.out.print(i + 1 + " Number: ");
-        Numbers[i] = Value.nextFloat();
+            System.out.print(i + 1 + " Number: ");
+            Numbers[i] = Value.nextFloat();
         }
 
         for (int i = 0; i <= Numbers.length - 1; i++) {
-        Sum = Sum + Numbers[i];
+            Sum = Sum + Numbers[i];
         }
         System.out.println("The Sum of these Numbers: " + Sum);
 
@@ -22,17 +22,17 @@ public class Array {
         System.out.println("Enter the Values of Array:");
         int[] SearchArray = new int[5];
         for (int i = 0; i <= SearchArray.length - 1; i++) {
-        System.out.print(i + 1 + " Number: ");
-        SearchArray[i] = Value.nextInt();
+            System.out.print(i + 1 + " Number: ");
+            SearchArray[i] = Value.nextInt();
         }
 
         System.out.print("Enter the Value to Find: ");
         int Search = Value.nextInt();
         for (int i = 0; i <= SearchArray.length - 1; i++) {
-        if (SearchArray[i] == Search) {
-        System.out.println("This Number is Present in the array at index " + i +
-        ".");
-        }
+            if (SearchArray[i] == Search) {
+                System.out.println("This Number is Present in the array at index " + i +
+                        ".");
+            }
         }
 
         // * Third Set */
@@ -40,9 +40,9 @@ public class Array {
         int[] Marks = new int[5];
         int Total = 0;
         for (int i = 0; i < Marks.length; i++) {
-        System.out.print(i + 1 + " Subject: ");
-        Marks[i] = Value.nextInt();
-        Total = Total + Marks[i];
+            System.out.print(i + 1 + " Subject: ");
+            Marks[i] = Value.nextInt();
+            Total = Total + Marks[i];
         }
         float Average = Total / 5;
         System.out.println("Average Marks of Student: " + Average);
@@ -53,16 +53,16 @@ public class Array {
         int[] Reverse = new int[5];
 
         for (int i = 0; i < RArray.length; i++) {
-        System.out.print(i + 1 + " Number: ");
-        RArray[i] = Value.nextInt();
+            System.out.print(i + 1 + " Number: ");
+            RArray[i] = Value.nextInt();
         }
         for (int i = 0; i < RArray.length; i++) {
-        Reverse[i] = RArray[RArray.length - i - 1];
+            Reverse[i] = RArray[RArray.length - i - 1];
         }
 
         System.out.println("Reverse Array");
         for (int i = 0; i < Reverse.length; i++) {
-        System.out.println(i + 1 + " Number " + Reverse[i]);
+            System.out.println(i + 1 + " Number " + Reverse[i]);
         }
 
         // ? Fifth Set
@@ -70,13 +70,13 @@ public class Array {
         int[] MAX = new int[5];
         int MAXNumber = 0;
         for (int i = 0; i < MAX.length; i++) {
-        System.out.print(i + 1 + " Number: ");
-        MAX[i] = Value.nextInt();
+            System.out.print(i + 1 + " Number: ");
+            MAX[i] = Value.nextInt();
         }
         for (int i = 1; i <= MAX.length; i++) {
-        if (MAX[i - 1] > MAXNumber) {
-        MAXNumber = MAX[i - 1];
-        }
+            if (MAX[i - 1] > MAXNumber) {
+                MAXNumber = MAX[i - 1];
+            }
         }
         System.out.println(MAXNumber);
 
@@ -95,6 +95,28 @@ public class Array {
             }
         }
         System.out.println(MINNumber);
+
+        // * Sixth Set */
+        System.out.println("Enter the Array: ");
+        int[] SortArray = new int[5];
+        int extra = 0;
+        for (int i = 0; i < SortArray.length; i++) {
+            System.out.print(i + 1 + " Number: ");
+            SortArray[i] = Value.nextInt();
+        }
+        for (int i = 0; i < SortArray.length; i++) {
+            for (int j = 0; j < SortArray.length - i - 1; j++) {
+                if (SortArray[j] > SortArray[j + 1]) {
+                    extra = SortArray[j];
+                    SortArray[j] = SortArray[j + 1];
+                    SortArray[j + 1] = extra;
+                }
+            }
+        }
+
+        for (int i = 0; i < SortArray.length; i++) {
+            System.out.println(SortArray[i]);
+        }
 
         Value.close();
     }
