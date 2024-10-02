@@ -1,14 +1,17 @@
+import java.util.Scanner;
+
 public class Methods {
-    static int Fact(int n) {
-        int factorial = n;
-        if (n > 1) {
-            factorial = n * Fact(n - 1);
+    static void Table(int n) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " * " + i + " = " + (n * i));
         }
-        return factorial;
     }
 
     public static void main(String[] args) {
-        int c = Fact(4);
-        System.out.println(c);
+        Scanner Values = new Scanner(System.in);
+        System.out.print("Enter The Number for Print table:");
+        int Number = Values.nextInt();
+        Table(Number);
+        Values.close();
     }
 }
