@@ -45,7 +45,14 @@ public class Methods {
         }
     }
 
- 
+    static float Average(float... n) {
+        float average = 0;
+        for (float i : n) {
+            average += i;
+        }
+        average = average / n.length;
+        return average;
+    }
 
     public static void main(String[] args) {
         Scanner Values = new Scanner(System.in);
@@ -57,7 +64,8 @@ public class Methods {
         System.out.println(s);
         ReversePattern(Number);
         Fibonacci(Number);
-       
+        float av = Average(15, 20, 30,5,89);
+        System.out.println(av);
         Values.close();
     }
 }
