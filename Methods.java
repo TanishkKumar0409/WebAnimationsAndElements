@@ -33,15 +33,31 @@ public class Methods {
         return Sum;
     }
 
+    static void Fibonacci(int n) {
+        int First = 0;
+        int Second = 1;
+        int Third = 0;
+        for (int i = 0; i < n; i++) {
+            System.out.println(Third);
+            Third = First + Second;
+            First = Second;
+            Second = Third;
+        }
+    }
+
+ 
+
     public static void main(String[] args) {
         Scanner Values = new Scanner(System.in);
-        System.out.print("Enter The Number for Print table:");
+        System.out.print("Enter The Number for All Methods:");
         int Number = Values.nextInt();
         Table(Number);
         pattern(Number);
         int s = NaturalSum(Number);
         System.out.println(s);
         ReversePattern(Number);
+        Fibonacci(Number);
+       
         Values.close();
     }
 }
