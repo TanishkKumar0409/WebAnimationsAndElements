@@ -16,6 +16,15 @@ public class Methods {
         }
     }
 
+    static void ReversePattern(int n) {
+        for (int i = n; i >= 0; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+
     static int NaturalSum(int n) {
         int Sum = n;
         if (n > 0) {
@@ -32,6 +41,7 @@ public class Methods {
         pattern(Number);
         int s = NaturalSum(Number);
         System.out.println(s);
+        ReversePattern(Number);
         Values.close();
     }
 }
