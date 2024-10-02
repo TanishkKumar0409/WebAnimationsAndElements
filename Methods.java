@@ -16,12 +16,22 @@ public class Methods {
         }
     }
 
+    static int NaturalSum(int n) {
+        int Sum = n;
+        if (n > 0) {
+            Sum = Sum + NaturalSum(n - 1);
+        }
+        return Sum;
+    }
+
     public static void main(String[] args) {
         Scanner Values = new Scanner(System.in);
         System.out.print("Enter The Number for Print table:");
         int Number = Values.nextInt();
         Table(Number);
         pattern(Number);
+        int s = NaturalSum(Number);
+        System.out.println(s);
         Values.close();
     }
 }
