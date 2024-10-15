@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #000, #020202, #080808);
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+.button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  background: #222;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 103%;
+  height: 104%;
+  background: #333;
+  left: -1px;
+  top: -1px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.button.glow::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #03045e,
+    #00b4d8,
+    #0096c7,
+    #023e8a,
+    #00ffd5,
+    #002bff,
+    #0077b6,
+    #03045e
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+}
+.button:hover::before {
+  opacity: 1;
+}
+.button:active::after {
+  background: transparent;
+}
+.button:active {
+  color: #000;
+  font-weight: bold;
+  transform: scale(0.98);
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
