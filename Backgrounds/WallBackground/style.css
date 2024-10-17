@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+}
+.bgAnimation {
+  top: 0;
+  left: 0;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  overflow: hidden;
+  background: #09090b;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  filter: saturate(2);
+}
+.colorBox {
+  filter: brightness(1.1);
+  transition: 2s ease;
+  position: relative;
+  margin: 2px;
+  background-color: rgba(23, 23, 23);
+}
+.colorBox:hover {
+  background: #00bfff;
+  transition-duration: 0s;
+}
+
+.backgroundAmim {
+  top: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  background: #67e8f9;
+  filter: blur(60px);
+  position: absolute;
+  animation: animBack 6s linear infinite;
+}
+@keyframes animBack {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 120%;
+  }
+}
+h1 {
+  position: relative;
+  cursor: pointer;
+  font-size: xx-large;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1em;
+}
