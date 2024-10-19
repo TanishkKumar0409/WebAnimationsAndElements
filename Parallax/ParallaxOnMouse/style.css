@@ -1,0 +1,150 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-images {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Ensure images are between the texts */
+  width: 300px;
+  height: 300px;
+}
+
+.background-images img {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  opacity: 1;
+  transition: transform 0.3s ease-out;
+  z-index: 2; /* Keep images between the texts */
+}
+
+.background-images img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.background-images img:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.background-images img:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.background-images img:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.centered-text {
+  position: absolute;
+  z-index: 1; /* Ensure this text is below the images */
+  font-size: 4rem;
+  text-align: center;
+}
+
+.upper-text {
+  position: absolute;
+  z-index: 3; /* Ensure this text is above the images */
+  font-size: 4rem;
+  text-align: center;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .centered-text,
+  .upper-text {
+    font-size: 3.5rem;
+  }
+  .background-images {
+    width: 250px;
+    height: 250px;
+  }
+  .background-images img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .centered-text,
+  .upper-text {
+    font-size: 3rem;
+  }
+  .background-images {
+    width: 220px;
+    height: 220px;
+  }
+  .background-images img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .centered-text,
+  .upper-text {
+    font-size: 2.5rem;
+  }
+  .background-images {
+    width: 200px;
+    height: 200px;
+  }
+  .background-images img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .centered-text,
+  .upper-text {
+    font-size: 2rem;
+  }
+  .background-images {
+    width: 180px;
+    height: 180px;
+  }
+  .background-images img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .centered-text,
+  .upper-text {
+    font-size: 1.5rem;
+  }
+  .background-images {
+    width: 160px;
+    height: 160px;
+  }
+  .background-images img {
+    width: 100px;
+  }
+}
