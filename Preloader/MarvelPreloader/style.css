@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  background-color: #0a0a0a; /* Dark background */
+  color: #ffffff; /* Light text color */
+}
+
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #1c1c1c, #000000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 3rem;
+  z-index: 9999;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+#preloader .marvel-symbol {
+  font-family: "Arial Black", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  color: #ff0000;
+  text-transform: uppercase;
+  animation: zoomInOut 1.5s infinite alternate; /* Zoom effect */
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+#countdown-container {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #ff0000;
+  animation: fadeInOut 1s infinite; /* Fade effect */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 2rem;
+  text-align: center;
+  color: #ddd;
+  position: relative;
+  z-index: 1;
+  background: url("https://example.com/marvel_background.jpg") no-repeat center
+    center/cover; /* Replace with your Marvel-themed background image */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content.visible {
+  opacity: 1;
+}
+
+/* Sample content styles */
+.hero-title {
+  font-family: "Arial Black", sans-serif;
+  font-size: 4rem;
+  color: #ff0000; /* Marvel red color */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #bbb;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 8px;
+}
+
+/* Ensure proper responsiveness */
+@media (max-width: 600px) {
+  #preloader .marvel-symbol {
+    font-size: 3rem;
+  }
+
+  #countdown-container {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
