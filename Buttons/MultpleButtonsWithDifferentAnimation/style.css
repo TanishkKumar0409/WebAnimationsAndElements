@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #1e1e1e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  h1{
+    color:#f0a826;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .animated-button {
+    display: inline-block;
+    margin: 15px;
+  }
+  /* Button 1 */
+  .btn-1 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: #1e1e1e;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .btn-1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #f0a826;
+    z-index: -1;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+  }
+  .btn-1:hover::before {
+    width: 110%;
+    height: 110%;
+    opacity: 1;
+  }
+  .btn-1:hover {
+    color: #fff;
+  }
+
+  /* Button 2 - Sliding Background */
+  .btn-2 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #f0a826;
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+  .btn-2:hover::before {
+    left: 0;
+  }
+  .btn-2:hover {
+    color: #1e1e1e;
+  }
+
+  /* Button 3 - Shining Effect */
+  .btn-3 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: #1e1e1e;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-45deg);
+    transition: all 0.5s ease;
+  }
+  .btn-3:hover::before {
+    left: 150%;
+  }
+
+  /* Button 4 - Border Reveal */
+  .btn-4 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f0a826;
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+  .btn-4:hover::before {
+    width: 100%;
+  }
+  .btn-4:hover {
+    color: #1e1e1e;
+    border-color: #f0a826;
+  }
+  /* Button 5 - Grow on Hover */
+  .btn-5 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-5:hover {
+    transform: scale(1.2);
+  }
+
+  /* Button 6 - Pulse Effect */
+  .btn-6 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: #1e1e1e;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-6::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #f0a826;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  .btn-6:hover::before {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.6;
+  }
+
+  /* Button 7 - Skew Effect */
+  .btn-7 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    background-color: #f0a826;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+    transform: skew(-10deg);
+  }
+  .btn-7:hover {
+    transform: skew(0deg);
+    background-color: #1e1e1e;
+    color: #f0a826;
+  }
+
+  /* Button 8 - Split Color */
+  .btn-8 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #f0a826;
+    z-index: -1;
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+  }
+  .btn-8:hover::before {
+    transform: translateX(0%);
+  }
+  .btn-8:hover {
+    color: #1e1e1e;
+  }
+
+  /* Button 9 - Text Flip */
+  .btn-9 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    perspective: 1000px;
+    transition: all 0.4s ease;
+  }
+  .btn-9:hover span {
+    display: block;
+    transform: rotateX(180deg);
+  }
+  .btn-9 span {
+    display: inline-block;
+    transition: all 0.6s ease;
+    transform: rotateX(0deg);
+  }
+
+  /* Button 10 - Border Blinking */
+  .btn-10 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-10:hover {
+    border-color: transparent;
+    box-shadow: 0 0 10px #f0a826, 0 0 20px #f0a826, 0 0 30px #f0a826;
+  }
+  /* Button 11 - Sliding Border */
+  .btn-11 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-11:hover {
+    border-top: 2px solid #f0a826;
+    border-bottom: 2px solid #f0a826;
+  }
+
+  /* Button 12 - Rotating Text */
+  .btn-12 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: #1e1e1e;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .btn-12::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #f0a826;
+    z-index: -1;
+    transition: transform 0.6s ease;
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  .btn-12:hover::after {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  .btn-12:hover {
+    color: #1e1e1e;
+  }
+
+  /* Button 13 - Circle Expand */
+  .btn-13 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-13:hover {
+    border-radius: 0;
+  }
+
+  /* Button 14 - Fill from Center */
+  .btn-14 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .btn-14::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #f0a826;
+    z-index: -1;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  .btn-14:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .btn-14:hover {
+    color: #1e1e1e;
+  }
+
+  /* Button 15 - Flip Effect */
+  .btn-15 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .btn-15::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0a826;
+    transform: rotateY(90deg);
+    transition: transform 0.6s;
+    z-index: -1;
+  }
+  .btn-15:hover::before {
+    transform: rotateY(0);
+  }
+
+  /* Button 16 - Bounce Animation */
+  .btn-16 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: #1e1e1e;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-16:hover {
+    animation: bounce 0.6s ease;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Button 17 - Ripple Effect */
+  .btn-17 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: #1e1e1e;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .btn-17::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background: rgba(240, 168, 38, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease;
+    border-radius: 50%;
+  }
+  .btn-17:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* Button 18 - Slide Underline */
+  .btn-18 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .btn-18::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f0a826;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+  .btn-18:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* Button 19 - Neon Glow */
+  .btn-19 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    background-color: #f0a826;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #f0a826, 0 0 20px #f0a826;
+    transition: all 0.4s ease;
+  }
+  .btn-19:hover {
+    box-shadow: 0 0 40px #f0a826, 0 0 80px #f0a826;
+  }
+
+  /* Button 20 - Text Slide */
+  .btn-20 {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f0a826;
+    background-color: #1e1e1e;
+    border: 2px solid #f0a826;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+  .btn-20 span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s ease;
+  }
+  .btn-20:hover span {
+    transform: translateY(-100%);
+  }
+  table {
+    text-align: center;
+    border-color: #f0a826;
+    border-collapse: collapse;
+  }
