@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/87f0afa689.js"
+      crossorigin="anonymous"
+    ></script>
+    <div class="wrapper" id="wrapper">
+      <div id="login-form" class="form-container active">
+        <form action="assets/php/loginScript.php" method="POST">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input
+              id="login-email"
+              type="email"
+              placeholder="Email"
+              name="Lemail"
+              required
+            />
+            <i
+              class="fa-solid fa-envelope"
+              onclick="focusInput('login-email')"
+            ></i>
+          </div>
+          <div class="input-box">
+            <input
+              id="login-password"
+              type="password"
+              placeholder="Password"
+              name="Lpassword"
+              required
+            />
+            <i
+              class="fa-solid fa-lock"
+              onclick="focusInput('login-password')"
+            ></i>
+          </div>
+          <div class="remember-forgot">
+            <label class="checkbox-container">
+              <input type="checkbox" class="show-password" data-form="login" />
+              <span></span>
+              Show Password
+            </label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit" name="Lbtn" class="btn">Login</button>
+          <div class="registered-link">
+            <p>
+              Don't have an account?<a href="#" onclick="toggleForms()"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <div id="register-form" class="form-container">
+        <form action="assets/php/registrationScript.php" method="POST">
+          <h1>Register</h1>
+          <div class="input-box">
+            <input
+              id="register-fullname"
+              type="text"
+              placeholder="Full Name"
+              name="Rname"
+              required
+            />
+            <i
+              class="fa-solid fa-user"
+              onclick="focusInput('register-fullname')"
+            ></i>
+          </div>
+          <div class="input-box">
+            <input
+              id="register-email"
+              type="email"
+              placeholder="Email"
+              name="Remail"
+              required
+            />
+            <i
+              class="fa-solid fa-envelope"
+              onclick="focusInput('register-email')"
+            ></i>
+          </div>
+          <div class="input-box">
+            <input
+              id="register-contact"
+              type="tel"
+              placeholder="Contact Number"
+              name="Rphone"
+              required
+            />
+            <i
+              class="fa-solid fa-phone"
+              onclick="focusInput('register-contact')"
+            ></i>
+          </div>
+          <div class="input-box">
+            <input
+              id="register-address"
+              type="text"
+              placeholder="Address"
+              name="Raddress"
+              required
+            />
+            <i
+              class="fa-solid fa-location-dot"
+              onclick="focusInput('register-address')"
+            ></i>
+          </div>
+          <div class="input-box">
+            <input
+              id="register-password"
+              type="password"
+              placeholder="Password"
+              name="Rpassword"
+              required
+            />
+            <i
+              class="fa-solid fa-lock"
+              onclick="focusInput('register-password')"
+            ></i>
+          </div>
+          <div class="input-box">
+            <input
+              id="register-confirm-password"
+              type="password"
+              placeholder="Confirm Password"
+              name="Rcpassword"
+              required
+            />
+            <i
+              class="fa-solid fa-lock"
+              onclick="focusInput('register-confirm-password')"
+            ></i>
+          </div>
+          <div class="remember-forgot">
+            <label class="checkbox-container">
+              <input
+                type="checkbox"
+                class="show-password"
+                data-form="register"
+              />
+              <span></span>
+              Show Password
+            </label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit" class="btn" name="Rbtn">Register</button>
+          <div class="registered-link">
+            <p>
+              Already have an account?<a href="#" onclick="toggleForms()"
+                >Login</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
