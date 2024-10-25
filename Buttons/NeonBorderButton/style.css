@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  transition: 0.5s linear;
+}
+
 body {
   background-color: black;
   height: 100vh;
@@ -5,62 +11,84 @@ body {
   justify-content: center;
   align-items: center;
 }
-.content {
-  gap: 0.5rem;
-  padding: 1rem;
-  line-height: 1.5rem;
-  white-space: nowrap;
-  background-color: #0d0d12;
-  border-radius: 50px;
-  position: relative;
-  justify-content: center;
-  font-size: large;
-  color: white;
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
-.gradient {
-  inset: -100px;
-  position: absolute;
-  background: conic-gradient(
-    #1e87ff,
-    #5c13c4,
-    #ff0033,
-    #ffda00,
-    #64bc26,
-    #1e87ff
-  );
-  animation: rotate 2s linear infinite;
-  animation-play-state: paused;
-}
-.btn {
-  padding: 5%;
-  position: relative;
+
+.button {
   background: black;
-  font-weight: bold;
-  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: white;
+  position: relative;
+  padding: 16px 12px;
+  font-size: 2rem;
   border-radius: 50px;
 }
-.btn:hover .gradient {
-  animation-play-state: running;
-}
-.neon,
-.border {
-  position: absolute;
+
+.button::after {
+  content: "";
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 2%;
   border-radius: 50px;
+  background: conic-gradient(
+    from var(--angle),
+    red,
+    blue,
+    yellow,
+    green,
+    white,
+    lime,
+    red
+  );
 }
-.neon {
+
+.button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 2%;
+  border-radius: 50px;
+  background: conic-gradient(
+    from var(--angle),
+    red,
+    blue,
+    yellow,
+    green,
+    white,
+    lime,
+    red
+  );
+}
+
+.button:hover::before {
   filter: blur(10px);
-  opacity: 1;
+  animation: BgRotation 3s linear infinite;
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+
+.button:hover:after {
+  animation: BgRotation 5s linear infinite;
+}
+
+@keyframes BgRotation {
+  from {
+    --angle: 0deg;
   }
-  100% {
-    transform: rotate(360deg);
+  to {
+    --angle: 360deg;
   }
 }
