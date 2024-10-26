@@ -1,0 +1,104 @@
+:root {
+  --primary-bg: #000;
+  --secondary-bg: #1d4b99;
+  --gradient-start: rgba(0, 0, 0, 0.6);
+  --gradient-middle: rgba(0, 0, 255, 0.2);
+  --gradient-end: rgba(0, 0, 255, 0.5);
+  --carousel-bg: rgba(30, 30, 30, 0.8);
+  --indicator-bg: #1d4b99;
+  --indicator-active-bg: #3498db;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 1s;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a1a;
+}
+
+.text-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  text-align: justify;
+  padding: 0 5% 0;
+}
+
+.carousel-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel {
+  width: 400px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: 1s;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity) * 1deg))
+    )
+    translateZ(200px);
+  background: var(--carousel-bg);
+  overflow: hidden;
+
+  box-shadow: 2px 2px 12px black, -1px -1px 8px black;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.indicator-container {
+  width: 80px;
+  position: relative;
+  margin-top: 50px;
+  border-radius: 10px;
+  height: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  z-index: 99;
+}
+
+.indicator {
+  width: 15%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--indicator-bg);
+  border: 0;
+  outline: 0;
+}
+
+.indicator.active {
+  width: 25%;
+  border-radius: 5px;
+  background: var(--indicator-active-bg);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Rotating Cube Carousel</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="carousel-section">
+        <div class="carousel" style="--quantity: 4">
+          <div class="carousel-item" style="--position: 1">
+            <img
+              src="https://i.pinimg.com/originals/ac/d6/c5/acd6c58a00e5e101e522fb25dc3500f1.gif"
+              alt="Nature Scene 1"
+            />
+          </div>
+          <div class="carousel-item" style="--position: 2">
+            <img
+              src="https://i.pinimg.com/originals/09/dc/04/09dc04b52e2b1957aeef2ac33a3b9230.gif"
+              alt="Nature Scene 2"
+            />
+          </div>
+          <div class="carousel-item" style="--position: 3">
+            <img
+              src="https://i.pinimg.com/originals/44/db/93/44db938c4d86a7ea3ae51a511304a117.gif"
+              alt="Nature Scene 3"
+            />
+          </div>
+          <div class="carousel-item" style="--position: 4">
+            <img
+              src="https://phoneky.co.uk/thumbs/screensavers/down/nature/2_a4UtKbZv.gif"
+              alt="Nature Scene 4"
+            />
+          </div>
+        </div>
+        <div class="indicator-container">
+          <button
+            class="indicator indicator1 active"
+            onclick="clickFunction(1)"
+          ></button>
+          <button
+            class="indicator indicator2"
+            onclick="clickFunction(2)"
+          ></button>
+          <button
+            class="indicator indicator3"
+            onclick="clickFunction(3)"
+          ></button>
+          <button
+            class="indicator indicator4"
+            onclick="clickFunction(4)"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
