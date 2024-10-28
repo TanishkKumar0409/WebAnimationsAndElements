@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/87f0afa689.js" crossorigin="anonymous"></script> 
+<section>
+      <div class="video-banner">
+        <video class="video-banner__video" autoplay muted loop playsinline>
+          <source
+            src="d:\movies\1 The Hobbit- An Unexpected Journey (2012) Extended 1080p 10Bit HEVC-HDHub4u.mkv"
+            type="video/mp4"
+          />
+        </video>
+        <div class="controls">
+          <button class="control-button mute-button" onclick="toggleMute()">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0"
+            oninput="changeVolume(this.value)"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <h2>The Avengers Initiative</h2>
+      <p>
+        The Avengers are a team of Earth's mightiest heroes, assembled to
+        protect the world from threats beyond the abilities of any single hero.
+        The original members include Iron Man, Captain America, Thor, Hulk,
+        Black Widow, and Hawkeye. Together, they face challenges that push them
+        to their limits, but with courage, intelligence, and teamwork, they
+        stand against any foe.
+      </p>
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_7uIiwWiIE9dHApIaBXwGfkI6q8rLVZKhlxIEarpn6VdmA5EZJJaQLvPJUJpM8RVURopArjOsAvFpwDm55adTUSO5Z-PG7Bf9tk17ydbbv8WNyI2pKXt3ojDxmrM-1YU6jxpzvNyjeqLr/w1440-h900-c/avengers-endgame-cast-characters-uhdpaper.com-8K-62.jpg"
+        alt="Avengers Team"
+      />
+      <p>
+        As the threats grow larger, so does the team, adding powerful allies
+        such as Scarlet Witch, Vision, and many others. The Avengers are more
+        than just a team—they are a symbol of hope, unity, and the power of
+        working together for the greater good.
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
