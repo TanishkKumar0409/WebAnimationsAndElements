@@ -1,0 +1,168 @@
+body {
+  background: #000000;
+}
+
+.turn {
+  height: 600px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  width: 80vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.item img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid white;
+  height: 100%;
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background-color: rgba(245, 245, 245, 0.484);
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: rgba(245, 245, 245, 0.484);
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background-color: rgba(245, 245, 245, 0.484);
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background-color: rgba(245, 245, 245, 0.484);
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background-color: rgba(245, 245, 245, 0.484);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.navigation {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navigation label {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation label:hover {
+  background-color: #aaaaaa;
+}
+
+input#pos1:checked ~ main#carousel {
+  --position: 1;
+}
+input#pos1:checked ~ .navigation label[for="pos1"] {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0 0 5px white;
+}
+input#pos2:checked ~ main#carousel {
+  --position: 2;
+}
+input#pos2:checked ~ .navigation label[for="pos2"] {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0 0 5px white;
+}
+input#pos3:checked ~ main#carousel {
+  --position: 3;
+}
+input#pos3:checked ~ .navigation label[for="pos3"] {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0 0 5px white;
+}
+input#pos4:checked ~ main#carousel {
+  --position: 4;
+}
+input#pos4:checked ~ .navigation label[for="pos4"] {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0 0 5px white;
+}
+input#pos5:checked ~ main#carousel {
+  --position: 5;
+}
+input#pos5:checked ~ .navigation label[for="pos5"] {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0 0 5px white;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.buttons button {
+  background-color: #ffffff18;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  color: white;
+  font-size: 240%;
+}
+
+.buttons button:hover {
+  background-color: #ffffff35;
+}
+
+.buttons #prev {
+  left: 5%;
+}
+
+.buttons #next {
+  right: 5%;
+}
