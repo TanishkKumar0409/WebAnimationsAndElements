@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #000033;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  width: 80vw;
+  max-width: 300px;
+  height: calc(80vw * 1.5);
+  max-height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://e1.pxfuel.com/desktop-wallpaper/538/40/desktop-wallpaper-captain-america-neon-thumbnail.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transform: translateZ(40px);
+}
+
+.card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, -40px) rotateY(180deg);
+  width: 85%;
+  height: 87%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-body .bg {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100px;
+  width: 0;
+  transition: 0.5s;
+}
+
+.card-body .bg:nth-child(1) {
+  height: 25%;
+  transform-origin: left;
+  top: 0;
+  left: -30%;
+  transform: rotate(-10deg);
+}
+
+.card-body .bg:nth-child(2) {
+  height: 50%;
+  transform-origin: right;
+  top: 5%;
+  right: -30%;
+  transform: rotate(-10deg);
+}
+
+.card-body .bg:nth-child(3) {
+  height: 50%;
+  transform-origin: left;
+  top: 70%;
+  left: -30%;
+  transform: rotate(-10deg);
+}
+
+.card:hover .card-body .bg {
+  width: 200%;
+  transition-delay: 1s;
+}
+
+.card:hover .card-body .bg:nth-child(2) {
+  transition-delay: 1.5s;
+}
+
+.card:hover .card-body .bg:nth-child(3) {
+  transition-delay: 2s;
+}
+
+.content {
+  position: relative;
+  transition: 0.5s;
+  padding: 20px 10px;
+  text-align: center;
+  opacity: 0;
+}
+
+.tittle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #292929;
+  text-transform: uppercase;
+}
+
+.para {
+  font-size: 1rem;
+  color: #292929;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transition-delay: 2.5s;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  background: gray;
+  padding: 10px;
+  margin: 20px -30px;
+  border-radius: 12px;
+  position: absolute;
+  border: 1px solid black;
+  transform: skewX(10deg);
+  transition: 0.5s;
+  font-size: 1rem;
+}
+
+a:hover {
+  box-shadow: 0 5px 5px gray;
+  transform: skewX(0);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90vw;
+    height: calc(90vw * 1.5);
+  }
+  .content {
+    padding: 20px 5px;
+  }
+  .tittle {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 0.875rem;
+  }
+  a {
+    padding: 5px;
+    margin: 10px -15px;
+    font-size: 0.875rem;
+  }
+}
