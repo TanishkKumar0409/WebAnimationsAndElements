@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="table">
+      <section class="tableHeader">
+        <h2>Customer Orders</h2>
+      </section>
+      <section class="tableBody">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Customer</th>
+              <th>Location</th>
+              <th>Order Date</th>
+              <th>Status</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/10.jpg"
+                  alt=""
+                />
+                Arjun Mehta
+              </td>
+              <td>Pune</td>
+              <td>12 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$150.75</strong></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  alt=""
+                />
+                Priya Singh
+              </td>
+              <td>Delhi</td>
+              <td>13 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$180.00</strong></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  alt=""
+                />
+                Rohit Sharma
+              </td>
+              <td>Mumbai</td>
+              <td>14 Jan 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$90.20</strong></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/13.jpg"
+                  alt=""
+                />
+                Sneha Kapoor
+              </td>
+              <td>Hyderabad</td>
+              <td>15 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$220.50</strong></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/14.jpg"
+                  alt=""
+                />
+                Rakesh Gupta
+              </td>
+              <td>Ahmedabad</td>
+              <td>16 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$300.00</strong></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/15.jpg"
+                  alt=""
+                />
+                Neha Bansal
+              </td>
+              <td>Chennai</td>
+              <td>17 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$125.80</strong></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/16.jpg"
+                  alt=""
+                />
+                Amit Kumar
+              </td>
+              <td>Kolkata</td>
+              <td>18 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$95.60</strong></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                  alt=""
+                />
+                Kavita Joshi
+              </td>
+              <td>Lucknow</td>
+              <td>19 Jan 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$110.30</strong></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/18.jpg"
+                  alt=""
+                />
+                Rajesh Yadav
+              </td>
+              <td>Noida</td>
+              <td>20 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$145.00</strong></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/19.jpg"
+                  alt=""
+                />
+                Pooja Sharma
+              </td>
+              <td>Bangalore</td>
+              <td>21 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$175.40</strong></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/20.jpg"
+                  alt=""
+                />
+                Karan Singh
+              </td>
+              <td>Jaipur</td>
+              <td>22 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$88.90</strong></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/21.jpg"
+                  alt=""
+                />
+                Simran Kaur
+              </td>
+              <td>Indore</td>
+              <td>23 Jan 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$200.25</strong></td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/22.jpg"
+                  alt=""
+                />
+                Vikram Verma
+              </td>
+              <td>Patna</td>
+              <td>24 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$125.00</strong></td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/23.jpg"
+                  alt=""
+                />
+                Geeta Rani
+              </td>
+              <td>Vadodara</td>
+              <td>25 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$165.75</strong></td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/24.jpg"
+                  alt=""
+                />
+                Deepak Reddy
+              </td>
+              <td>Coimbatore</td>
+              <td>26 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$80.50</strong></td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/25.jpg"
+                  alt=""
+                />
+                Anjali Patel
+              </td>
+              <td>Surat</td>
+              <td>27 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$60.90</strong></td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/26.jpg"
+                  alt=""
+                />
+                Suresh Kumar
+              </td>
+              <td>Vijayawada</td>
+              <td>28 Jan 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$220.00</strong></td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/27.jpg"
+                  alt=""
+                />
+                Riya Mehta
+              </td>
+              <td>Raipur</td>
+              <td>29 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$135.30</strong></td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/28.jpg"
+                  alt=""
+                />
+                Nitin Agarwal
+              </td>
+              <td>Bhopal</td>
+              <td>30 Jan 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$300.90</strong></td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/29.jpg"
+                  alt=""
+                />
+                Shreya Choudhary
+              </td>
+              <td>Ahmedabad</td>
+              <td>31 Jan 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$99.99</strong></td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/30.jpg"
+                  alt=""
+                />
+                Harsh Verma
+              </td>
+              <td>Pune</td>
+              <td>01 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$45.50</strong></td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/31.jpg"
+                  alt=""
+                />
+                Meera Joshi
+              </td>
+              <td>Lucknow</td>
+              <td>02 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$78.40</strong></td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt=""
+                />
+                Ravi Gupta
+              </td>
+              <td>Delhi</td>
+              <td>03 Feb 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$62.10</strong></td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/33.jpg"
+                  alt=""
+                />
+                Nisha Sharma
+              </td>
+              <td>Bangalore</td>
+              <td>04 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$180.30</strong></td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/34.jpg"
+                  alt=""
+                />
+                Sanjay Singh
+              </td>
+              <td>Kolkata</td>
+              <td>05 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$250.70</strong></td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/35.jpg"
+                  alt=""
+                />
+                Anita Kaur
+              </td>
+              <td>Hyderabad</td>
+              <td>06 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$130.25</strong></td>
+            </tr>
+            <tr>
+              <td>27</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/36.jpg"
+                  alt=""
+                />
+                Vikrant Yadav
+              </td>
+              <td>Jaipur</td>
+              <td>07 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$170.15</strong></td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/37.jpg"
+                  alt=""
+                />
+                Sonali Mehta
+              </td>
+              <td>Ahmedabad</td>
+              <td>08 Feb 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$220.60</strong></td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/38.jpg"
+                  alt=""
+                />
+                Ashish Kapoor
+              </td>
+              <td>Pune</td>
+              <td>09 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$145.85</strong></td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/39.jpg"
+                  alt=""
+                />
+                Kavya Patel
+              </td>
+              <td>Delhi</td>
+              <td>10 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$95.75</strong></td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/40.jpg"
+                  alt=""
+                />
+                Kunal Verma
+              </td>
+              <td>Mumbai</td>
+              <td>11 Feb 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$200.90</strong></td>
+            </tr>
+            <tr>
+              <td>32</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/41.jpg"
+                  alt=""
+                />
+                Shruti Bansal
+              </td>
+              <td>Chennai</td>
+              <td>12 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$110.20</strong></td>
+            </tr>
+            <tr>
+              <td>33</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/42.jpg"
+                  alt=""
+                />
+                Tarun Singh
+              </td>
+              <td>Kolkata</td>
+              <td>13 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$230.10</strong></td>
+            </tr>
+            <tr>
+              <td>34</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/43.jpg"
+                  alt=""
+                />
+                Anita Joshi
+              </td>
+              <td>Indore</td>
+              <td>14 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$165.30</strong></td>
+            </tr>
+            <tr>
+              <td>35</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/44.jpg"
+                  alt=""
+                />
+                Ankur Agarwal
+              </td>
+              <td>Patna</td>
+              <td>15 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$120.50</strong></td>
+            </tr>
+            <tr>
+              <td>36</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/45.jpg"
+                  alt=""
+                />
+                Manisha Kaur
+              </td>
+              <td>Vadodara</td>
+              <td>16 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$75.25</strong></td>
+            </tr>
+            <tr>
+              <td>37</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/46.jpg"
+                  alt=""
+                />
+                Sidharth Reddy
+              </td>
+              <td>Coimbatore</td>
+              <td>17 Feb 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$185.90</strong></td>
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/47.jpg"
+                  alt=""
+                />
+                Aditi Sharma
+              </td>
+              <td>Vijayawada</td>
+              <td>18 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$160.75</strong></td>
+            </tr>
+            <tr>
+              <td>39</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/48.jpg"
+                  alt=""
+                />
+                Karan Joshi
+              </td>
+              <td>Raipur</td>
+              <td>19 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$195.80</strong></td>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/49.jpg"
+                  alt=""
+                />
+                Isha Gupta
+              </td>
+              <td>Bhopal</td>
+              <td>20 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$99.90</strong></td>
+            </tr>
+            <tr>
+              <td>41</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/50.jpg"
+                  alt=""
+                />
+                Tarun Kumar
+              </td>
+              <td>Pune</td>
+              <td>21 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$85.50</strong></td>
+            </tr>
+            <tr>
+              <td>42</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/51.jpg"
+                  alt=""
+                />
+                Pooja Yadav
+              </td>
+              <td>Noida</td>
+              <td>22 Feb 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$120.20</strong></td>
+            </tr>
+            <tr>
+              <td>43</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/52.jpg"
+                  alt=""
+                />
+                Aman Malhotra
+              </td>
+              <td>Agra</td>
+              <td>23 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$135.75</strong></td>
+            </tr>
+            <tr>
+              <td>44</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/53.jpg"
+                  alt=""
+                />
+                Riya Mehta
+              </td>
+              <td>Surat</td>
+              <td>24 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$112.50</strong></td>
+            </tr>
+            <tr>
+              <td>45</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/54.jpg"
+                  alt=""
+                />
+                Aakash Sharma
+              </td>
+              <td>Chennai</td>
+              <td>25 Feb 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$145.00</strong></td>
+            </tr>
+            <tr>
+              <td>46</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/55.jpg"
+                  alt=""
+                />
+                Kritika Jain
+              </td>
+              <td>Mumbai</td>
+              <td>26 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$55.25</strong></td>
+            </tr>
+            <tr>
+              <td>47</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/56.jpg"
+                  alt=""
+                />
+                Kunal Yadav
+              </td>
+              <td>Pune</td>
+              <td>27 Feb 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$75.60</strong></td>
+            </tr>
+            <tr>
+              <td>48</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/57.jpg"
+                  alt=""
+                />
+                Neha Sharma
+              </td>
+              <td>Delhi</td>
+              <td>28 Feb 2023</td>
+              <td><p class="status shipped">Shipped</p></td>
+              <td><strong>$98.90</strong></td>
+            </tr>
+            <tr>
+              <td>49</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/men/58.jpg"
+                  alt=""
+                />
+                Rohan Gupta
+              </td>
+              <td>Bangalore</td>
+              <td>01 Mar 2023</td>
+              <td><p class="status delivered">Delivered</p></td>
+              <td><strong>$110.75</strong></td>
+            </tr>
+            <tr>
+              <td>50</td>
+              <td>
+                <img
+                  src="https://randomuser.me/api/portraits/women/59.jpg"
+                  alt=""
+                />
+                Priya Yadav
+              </td>
+              <td>Hyderabad</td>
+              <td>02 Mar 2023</td>
+              <td><p class="status cancelled">Cancelled</p></td>
+              <td><strong>$125.40</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
