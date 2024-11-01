@@ -1,0 +1,170 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  height: 200vh;
+  background: #000;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Content Section */
+.content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e63946;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #e63946, #457b9d, #1d3557);
+  border-radius: 6px;
+  animation: scroll-animate 3s ease infinite;
+  transition: 0.5s;
+}
+
+@keyframes scroll-animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Scrollbar Thumb Hover Effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #457b9d, #1d3557, #e63946);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Marvel Banner */
+.marvel-banner {
+  width: 100%;
+  height: 60vh;
+  background: url("https://example.com/marvel-banner.jpg") no-repeat center
+    center/cover;
+  position: relative;
+  animation: bannerFade 2s ease-in-out;
+}
+
+.marvel-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.marvel-banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes bannerFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Content Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  color: #fff;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e63946;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
